@@ -15,4 +15,4 @@ for l in path:
 #with this code for now, I'm going round the loop looking into the paths listed on the list, and trying to copy them to the path on newPath. Funny thing is that python lists the files on the paths and inputs it to my list "files", but when it trys to copy the obj in the second for loop, it does not find the file in the second path, because I guess shut.util only seems things in the current directory.
 #My question is: do you think this is a good way to go, or would you do things drastically diferrently? If yes, could you give my a way forward?
 
-#for now, my challenges are: find a way to list, find the file, and in this exact moment copy to the newpath, without inputing to the list "files"?
+#for now, one of my challenge is: find a way to list, find the file, and in this exact moment copy to the newpath, without inputing to the list "files"?
