@@ -1,5 +1,4 @@
 import sys
-import os
 import shutil
 
 #My idea here is, giving a list of paths to directories, go to each one of them, if the files on them end with "gz", I would like to copy this file to a specific directory, and I would like to print (or save to a file) the path where it came from + the name of the file). I just thought that for this second problem, maybe I should use a dictionary?
