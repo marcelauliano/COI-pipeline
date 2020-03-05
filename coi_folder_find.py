@@ -5,7 +5,7 @@ import os
 import argparse
 today= date.today()
 parser= argparse.ArgumentParser(add_help=False)
-parser.add_argument("-h", "--help", action="help", default=argparse.SUPPRES, help= "This script was written to deal with the Sanger Tola assembly team folder structure. It searches for a folder called 'coi' from the path given as first argument '-p'. Arguments are described as follows") 
+parser.add_argument("-h", "--help", action="help", default=argparse.SUPPRESS, help= "This script was written to deal with the Sanger Tola assembly team folder structure. It searches for a folder called 'coi' from the path given as first argument '-p'. Arguments are described as follows") 
 parser.add_argument("-p", help= "-p is root path directory to look for 'coi' folder in subsequent directories", required = "True")
 parser.add_argument("-output1", help= "output1 is a file that presents a list of directories that contain a folder 'coi'", required = "True")
 parser.add_argument("-output2", help= "output1 is a file that presents a list of directories that DOES NOT contain a folder 'coi'", required = "True")
