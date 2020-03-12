@@ -16,10 +16,10 @@ path =[ ]
 path2 = [ ]
 for rootDir, dirs, files in os.walk(args.p):
     for d in dirs:
-        if 'coi' in dirs:
+        if d === 'coi':
             path.append(os.path.join(rootDir, d))
         else:
-            if 'PacBio' in dirs:
+            if d === 'PacBio':
                 path2.append(os.path.join(rootDir, d))
             
 
