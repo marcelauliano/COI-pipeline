@@ -1,7 +1,7 @@
 import argparse
 parser= argparse.ArgumentParser(add_help=False)
-parser.add_argument("-h", "--help", action="help", default=argparse.SUPPRESS, help= "This script is going to generate a line that can be executed to download coi-5p fasta sequences for a given species. Usage is: python bold_path.py -s 'genus species' -o <output>") 
-parser.add_argument("-s", help= "-s is the species name to be downloaded. In this fashion: 'genus species'. It can be only 'genus'. Ex 'homo sapiens'", required = "True")
+parser.add_argument("-h", "--help", action="help", default=argparse.SUPPRESS, help= "This script generates a line that can be executed to download coi-5p fasta sequences for a given species. Usage is: python bold_path.py -s 'genus_species' -o <output>") 
+parser.add_argument("-s", help= "-s is the species name to be downloaded. In this fashion: 'genus_species'. It can be only 'genus'. Ex 'homo_sapiens'", required = "True")
 parser.add_argument("-o", help= "output file where a line to download coi-5p will be written", required = "True")
 
 args = parser.parse_args()
