@@ -10,7 +10,7 @@ new_species="$2" #Replace this with species name underscored. Ex: homo_sapiens.
 
 
 if [ "$1" == "-h" ]; then
-  echo "Usage: $1 fasta sequence to be analyzed, $2 species name ex: homo_sapiens"
+  echo "Usage: S1 fasta sequence to be analyzed, S2 species name ex: homo_sapiens"
   exit 0
 fi
 
@@ -32,7 +32,7 @@ fi
 python $software/get_bold.py -s $new_species -o out #python script that generates a wget line for coi-5p of the species present in the variable new_specie 
 sh out
 
-if [[ -f ./newseqs ]]
+if [[ -f newseqs ]]
 then
         echo "newseqs created. Editing and adding it to blast db"
 else
