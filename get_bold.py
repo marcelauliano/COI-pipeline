@@ -11,7 +11,7 @@ name = args.s.split("_")
 genus=name[0]
 if len(name) ==2:
     species=name[1]
-    output.write("wget -q -O line_download" + " " + "http://v3.boldsystems.org/index.php/API_Public/sequence?taxon=" + genus +"%20" + species + "&marker=COI-5P")
+    output.write("wget -q -O newseqs" + " " + "http://v3.boldsystems.org/index.php/API_Public/sequence?taxon=" + genus +"%20" + species + "&marker=COI-5P")
 else:
     species = None
-    output.write("wget -q -O line_download" + " " + "http://v3.boldsystems.org/index.php/API_Public/sequence?taxon=" + genus +"%20" + "&marker=COI-5P")
+    output.write("wget -q -O newseqs" + " " + "http://v3.boldsystems.org/index.php/API_Public/sequence?taxon=" + genus +"%20" + "&marker=COI-5P")
